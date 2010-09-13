@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Gudleik Rasch"]
   s.email       = ["gudleik@gmail.com"]
   s.homepage    = "http://github.com/gudleik/gem-toolbox"
-  s.summary     = "Gem toolbox"
-  s.description = "Plugins for RubyGems"
+  s.summary     = "Adds extra commands to RubyGems: open, doc, history, readme and visit"
+  s.description = "Gem-Toolbox is a RubyGems plugin that adds extra commands to RubyGems: open, doc, history, readme and visit"
 
   s.files       = Dir.glob("{lib}/**/*") + %w(README.rdoc CHANGES.md) 
 
