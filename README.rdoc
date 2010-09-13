@@ -1,0 +1,63 @@
+= Gem-Toolbox
+
+This is a gem that adds a few extra commands to RubyGem: *open*, *readme*, *history* and *doc* and *visit*.
+
+== Usage
+
+
+=== Opening a gem
+
+To open a gem's installation folder in textmate:
+
+    $ export EDITOR=mate
+    $ gem open gem-toolbox
+
+Note: This is the same command as the one in open_gem.
+
+    
+=== Displaying the README
+
+The readme command will try to find a readme file and 
+display it using $GEM_PAGER or $PAGER:
+
+    $ export PAGER=less
+    $ gem readme gem-toolbox
+
+If you prefer to read it using a editor:
+
+    $ gem readme gem-toolbox -c vim
+
+
+=== Viewing the gem's changelog
+
+You can view the changelog using the *history* command:
+
+    $ gem history gem-toolbox
+    
+It will search the gem for a typical changelog file (history, changes, changelog) 
+and display it using $GEM_PAGER or $PAGER or a custom command (-c).
+
+
+=== Browsing the documentation  
+
+To browse the documentation for a gem in your browser:
+
+    $ gem doc gem-toolbox
+    
+You can use a custom command too:
+
+    $ gem doc gem-toolbox -c lynx
+
+Note: This is the same command as *read* from open_gem.
+
+
+=== Visiting the gem's homepage
+
+This opens the gem's homepage in your favorite browser
+
+    $ gem visit gem-toolbox
+
+
+== Credits
+
+This gem is based on adamsanderson's open_gem, thank you!
