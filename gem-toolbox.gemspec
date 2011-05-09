@@ -5,14 +5,14 @@ $:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name        = "gem-toolbox"
-  s.version     = "0.0.2"
+  s.version     = "0.1.0"
   s.platform    = Gem::Platform::RUBY
 
   s.authors     = ["Gudleik Rasch"]
   s.email       = ["gudleik@gmail.com"]
   s.homepage    = "http://github.com/gudleik/gem-toolbox"
-  s.summary     = "Adds extra commands to RubyGems: open, doc, history, readme and visit"
-  s.description = "Gem-Toolbox is a RubyGems plugin that adds extra commands to RubyGems: open, doc, history, readme and visit"
+  s.summary     = "Adds extra commands to RubyGems: open, cd, doc, history, readme and visit"
+  s.description = "Gem-Toolbox is a RubyGems plugin that adds extra commands to RubyGems: open, cd, doc, history, readme and visit"
 
   s.files       = Dir.glob("{lib}/**/*") + %w(README.rdoc CHANGES.md) 
 
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.rubygems_version  = "1.3.7"
   
   s.add_dependency("launchy", ["~> 0.3.5"])
+  s.add_dependency("rb-appscript", ["~> 0.6.1"])
   
   # s.add_development_dependency "rspec"
   # s.test_files = [

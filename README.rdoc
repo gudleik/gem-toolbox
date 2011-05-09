@@ -14,6 +14,13 @@ To open a gem's installation folder in textmate:
 
 Note: This is the same command as the one in open_gem.
 
+
+=== Changing directory to the gem's source files
+
+    $ gem cd gem-toolbox
+
+Note: This currently only works in Terminal (Mac OSX)
+
     
 === Displaying the README
 

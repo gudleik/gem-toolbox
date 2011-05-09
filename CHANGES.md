@@ -1,3 +1,7 @@
+## 0.1.0, released 2011-05-09
+
+* Added cd command (Mac OSX only)
+
 ## 0.0.2, released 2010-09-13
 
 * Added dependencies to gemspec
