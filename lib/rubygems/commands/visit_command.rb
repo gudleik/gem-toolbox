@@ -26,7 +26,7 @@ class Gem::Commands::VisitCommand < Gem::Command
     spec = get_spec(name)    
     
     if spec.homepage
-      Launchy::Browser.run(spec.homepage)
+      Launchy.open(spec.homepage)
     else
       say "Homepage not defined for #{name}"
     end

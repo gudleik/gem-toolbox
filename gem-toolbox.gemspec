@@ -5,7 +5,7 @@ $:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name        = "gem-toolbox"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.platform    = Gem::Platform::RUBY
 
   s.authors     = ["Gudleik Rasch"]
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.require_paths     = ["lib"]
   s.rubygems_version  = "1.3.7"
   
-  s.add_dependency("launchy", ["~> 0.3.5"])
+  s.add_dependency("launchy", ["~> 2.0.5"])
   s.add_dependency("rb-appscript", ["~> 0.6.1"])
   
   # s.add_development_dependency "rspec"
